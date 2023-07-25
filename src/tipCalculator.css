@@ -117,6 +117,13 @@ body{
         display: flex;
         flex-direction: column;
     }
+    .card-one{
+        order: 1;
+    }
+
+    .card-two{
+        order: 2;
+    }
     
 }
 /* input[type='number']{
