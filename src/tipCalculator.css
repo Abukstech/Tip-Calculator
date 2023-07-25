@@ -1,0 +1,153 @@
+body{
+  background-color:hsl(185, 41%, 84%);
+  font-family:Space Mono;
+  font-size: 24px;
+  font-weight: 800;
+
+}
+
+
+
+
+.calculator{
+    /* border: 2px solid white ; */
+    display: flex;
+    justify-content:space-evenly; 
+    padding: 20px;
+    align-items: center;
+    max-height: 481px;
+    max-width: 920px;
+    background-color: white;
+    margin: 50px auto 0 auto;
+    gap : 20px;
+    border-radius: 10px;
+}
+
+.card-two{
+    background-color: hsl(183, 100%, 15%);
+   max-width: 343px;
+    max-height: 347px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.Tip{
+    display: flex;
+    justify-content: space-between;
+
+} 
+.Tip-text > p{
+    margin-bottom:2px;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.Tip-text > span{
+    color:#7F9D9F;
+}
+
+.Tip-number{
+    color: #26C2AE;
+}
+
+.card-two button {
+    align-items: center;
+    width: 333px;
+    margin: 40px auto 0 auto;
+    height: 48px;
+    background-color: #26C2AE;
+    border: none;
+    outline: none;
+}
+.card-two button:hover{
+    background-color: #9FE8DF;
+    color: #00474B;
+}
+
+
+.Bill svg {
+    position:absolute;
+    padding: 6px 1px 2px 4px;
+    text-align: center;
+    
+}
+
+
+.Bill input {
+    padding: 8px;
+    text-align: right;
+    width: 359px;
+}
+
+.percentage-button{
+    display: grid;
+    max-width:379px;
+    height: 152px;
+    grid-template-columns: repeat(3,117px);
+    grid-template-rows: repeat(2,48px) ;
+    gap: 15px;
+    color: aqua;
+   
+}
+.card-one{
+    margin-top: 20px;
+    
+    width:379px;
+    height: 388px;
+
+}
+
+.percentage-button button {
+    background-color: #00474B;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.percentage-button button:hover{
+ background-color: #26C2AE ;
+}
+.logo{
+    width:86.6px;
+    margin: 30px auto;
+    
+}
+
+@media screen and (max-width:375px) {
+    /* for mobile phones */
+    .calculator{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/* input[type='number']{
+    
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    
+} */
+
+/* .label-container{
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+      
+} */
+
+
+/* button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+} */
+
+/* .column{
+    flex: 1;
+} */
