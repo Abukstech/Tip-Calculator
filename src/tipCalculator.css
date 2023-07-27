@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
 body{
   background-color:hsl(185, 41%, 84%);
   font-family:Space Mono;
@@ -15,7 +22,7 @@ body{
     justify-content:space-evenly; 
     padding: 20px;
     align-items: center;
-    max-height: 481px;
+    height: 481px;
     max-width: 920px;
     background-color: white;
     margin: 50px auto 0 auto;
@@ -25,8 +32,8 @@ body{
 
 .card-two{
     background-color: hsl(183, 100%, 15%);
-   max-width: 343px;
-    max-height: 347px;
+    max-width: 413px;
+    height: 417px;
     padding: 30px;
     border-radius: 10px;
 }
@@ -51,8 +58,8 @@ body{
 
 .card-two button {
     align-items: center;
-    width: 333px;
-    margin: 40px auto 0 auto;
+    width: 373px;
+    margin: 80px auto 0 auto;
     height: 48px;
     background-color: #26C2AE;
     border: none;
@@ -66,7 +73,7 @@ body{
 
 .Bill svg {
     position:absolute;
-    padding: 6px 1px 2px 4px;
+    padding:  15px 6px  5px  ;
     text-align: center;
     
 }
@@ -75,7 +82,7 @@ body{
 .Bill input {
     padding: 8px;
     text-align: right;
-    width: 359px;
+    width: 375px;
 }
 
 .percentage-button{
@@ -92,7 +99,7 @@ body{
     margin-top: 20px;
     
     width:379px;
-    height: 388px;
+    height: 408px;
 
 }
 
@@ -101,6 +108,8 @@ body{
     border: none;
     border-radius: 10px;
     outline: none;
+    font-family: Space Mono;
+    color: #FFFFFF;
 }
 .percentage-button button:hover{
  background-color: #26C2AE ;
@@ -111,21 +120,57 @@ body{
     
 }
 
-@media screen and (max-width:375px) {
+ @media   (max-width:425px) {
     /* for mobile phones */
     .calculator{
-        display: flex;
-        flex-direction: column;
+        display: flex; 
+        flex-direction:column; 
+        height:789px;
+        width:375px; 
+        padding-left: 20px;
+
+       
+        
+ 
     }
+
+    
     .card-one{
         order: 1;
+        align-items: center;
+      
+        padding-left: 20px;
     }
 
     .card-two{
         order: 2;
+        width: 327px;
+        height: 257px;
+        border-radius: 15px;
+        padding: 30px;
+        align-items: center;
     }
+    .percentage-button{
+        display: grid;
+        grid-template-columns: repeat(2,146.63px);
+        grid-template-rows: repeat(3,48px);
+        max-width: 311px;
+        margin-bottom: 50px;
+
+        
+    }
+
+    .card-two button{
+        width: 281px;
+        margin-top: 0;
+    }
+
+    .Bill Input{
+     width: 311px;
+    }
+
     
-}
+} 
 /* input[type='number']{
     
     padding: 5px;
